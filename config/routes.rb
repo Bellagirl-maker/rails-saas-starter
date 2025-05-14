@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  get "pricing/index"
   get "/dashboard", to: "dashboard#index"
+  get "/pricing", to: "pricing#index"
+
   devise_for :users
   get "home/index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
