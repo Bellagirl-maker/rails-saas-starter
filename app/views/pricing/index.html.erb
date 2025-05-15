@@ -1,4 +1,13 @@
+<h1>Choose Your Plan</h1>
+
 <div>
-  <h1 class="font-bold text-4xl">Pricing#index</h1>
-  <p>Find me in app/views/pricing/index.html.erb</p>
+  <h2>Free Plan</h2>
+  <p>Access to basic features</p>
+  <%= link_to "Start for Free", dashboard_path, class: "btn btn-primary" %>
+</div>
+
+<div>
+  <h2>Pro Plan - $10/month</h2>
+  <p>All features, priority support</p>
+  <%= button_to "Upgrade to Pro", "/checkout", method: :post, class: "btn btn-success" %>
 </div>
